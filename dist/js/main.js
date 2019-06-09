@@ -100,15 +100,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class MakeBusiness {
-  constructor({owner, director = "Victor", cash, emp} = {}) {
-    this.owner = owner;
-    this.director = director;
-    this.cash = cash;
-    this.emp = emp;
+  constructor({owner: ow, director : di, cash: ca, emp: em} = {}) {
+    this.ow = ow;
+    this.director = di;
+    this.cash = ca;
+    this.emp = em;
+    if (typeof (this.di) === 'undefined') this.di = "Victor";
   }
   businessInfo() {
     const sumSponsors = [..._sponsors__WEBPACK_IMPORTED_MODULE_0__["eu"], ..._sponsors__WEBPACK_IMPORTED_MODULE_0__["rus"], 'unexpected sponsor'];
-    console.log(`We have a business. Owner: ${this.owner}, director: ${this.director}. Our budget: ${this.cash}. And our employers: ${this.emp}`);
+    console.log(`We have a business. Owner: ${this.ow}, director: ${this.di}. Our budget: ${this.ca}. And our employers: ${this.em}`);
     console.log('And we have a sponsors: ');
     console.log(...sumSponsors);
     console.log(`Note. Be careful with ${_sponsors__WEBPACK_IMPORTED_MODULE_0__["firstName"]}. It's a huge risk.`);

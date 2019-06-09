@@ -5,20 +5,13 @@ let path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './Lessons/Lesson2/Lesson/src/js/index.js',
+  entry: './src/js/index.js',
   output: {
     filename: 'main.js',
-    path: __dirname + './Lessons/Lesson2/Lesson/dist/js',
-    publicPath: './Lessons/Lesson2/Lesson/dist/js'
+    path: __dirname + '/dist/js'
   },
   watch: true,
-  devtool: "source-map",
-  devServer: {
-    overlay: true,
-    contentBase: path.join(__dirname, './Lessons/Lesson2/Lesson/dist/'),
-    compress: true,
-    port: 9000
-  }
+  devtool: "source-map"
 };
 
 
